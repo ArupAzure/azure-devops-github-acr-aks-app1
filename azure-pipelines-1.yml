@@ -11,13 +11,13 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'a6a139cf-35ca-4fe1-b438-5a7ac08818cc'
-  imageRepository: 'app1nginx'
+  imageRepository: 'arupazureazuredevopsgithubacraksapp'
   containerRegistry: 'aksdevopsacr89-fkc6fzafhuekcjcc.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'arupselfhosted'
+  vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
